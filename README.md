@@ -26,9 +26,24 @@ The full set of files related to this course are owned by Udacity, so they are n
 
 ## File Descriptions <a name="files"></a>
 
-There are 3 notebooks available here to showcase work related to the above questions.  Each of the notebooks is exploratory in searching through the data pertaining to the questions showcased by the notebook title.  Markdown cells were used to assist in walking through the thought process for individual steps.  
+There are 3 notebooks available here to showcase work related to the above questions.  Each of the notebooks is exploratory in searching through the data pertaining to the questions showcased by the notebook title.  Markdown cells were used to assist in walking through the thought process for individual steps. 
+
+1. HowToBreakIntoTheField.ipynb: This notebook dives into the Stack Overflow public survey results and takes a deeper look into what advice would be given to a cousin who wanted to get into the software development field with little to no experience. This notebook looks to answer the first question above. 
+2. BootcampStats.ipynb: This notebook dives into the Stack Overflow public survey results and looks to understand how being a graduate of this Bootcamp impacted job placement and salary.
+3. Salary.ipynb: This notebook dives into the Stack Overflow public survey results and looks breakdown the relationship between salary and job satisfaction. 
 
 There is an additional `.py` file that runs the necessary code to obtain the final model used to predict salary.
+
+1. Salary_ML.py: Contains two functions clean_data and find_optimal_lm_mod.
+    * clean_data: cleans the dataframe input using the following steps:
+        1. Drop all the rows with no salaries
+        2. Create X as all the columns that are not the Salary column
+        3. Create y as the Salary column
+        4. Drop the Salary, Respondent, and the ExpectedSalary columns
+        5. For each numeric variable, fill the column with the mean value.
+        6. Create dummy columns for all the categorical variables, drop the original columns
+    * find_optimal_lm_mod: input is dataframe attributes and pertinent model information. output are several scoring metrics.
+
 
 ## Results<a name="results"></a>
 
